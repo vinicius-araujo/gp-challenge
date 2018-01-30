@@ -1,0 +1,33 @@
+{
+  "name": "gp-challenge",
+  "version": "1.0.0",
+  "description": "challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius-araujo/gp-challenge.git"
+  },
+  "keywords": [
+    "es6",
+    "JavaScript"
+  ],
+  "author": "Vinicius Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinicius-araujo/gp-challenge/issues"
+  },
+  "homepage": "https://github.com/vinicius-araujo/gp-challenge#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^5.0.0"
+  }
+}
