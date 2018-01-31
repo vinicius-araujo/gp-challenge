@@ -1,4 +1,4 @@
-import { sortList, concatList, removeDupl } from '../main';
+import { sortList, concatList, removeDupl } from '../src/main';
 
 const expect = require('expect.js');
 
