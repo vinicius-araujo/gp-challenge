@@ -32,7 +32,7 @@ const uniqueList = concatList(firstList, secondList);
 //uniqueList => [1, 2, 3, 1, 2, 'three']
 ```
 
-### removeDupl(list)
+### removeDupl(array)
 
 > Remove all duplicate item of an Array.
 
@@ -45,7 +45,7 @@ const resultList = removeDupl(list);
 //resultList => [1, 2, 3, 'three']
 ```
 
-### sortList(list)
+### sortList(array)
 
 > Sort an array of object from the oldest to the newest using 'lastModified' property.
 
