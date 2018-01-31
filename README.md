@@ -18,7 +18,32 @@ npm run test:tdd
 
 > Follow the methods that the project provides.
 
-### concatList(..args)
+### getLastUpdatedList(..args:*array*)
+
+> Return an array without any duplicate item and sorted by "lastModified"
+
+**Example**
+
+```js
+let firstObj = { id: 1, lastModified: new Date('2005-12-17T03:24:00') };
+let secondObj = { id: 2, lastModified: new Date('1995-12-17T03:24:00') };
+let thirdObj = { id: 3, lastModified: new Date('1999-12-17T03:24:00') };
+let fourthObj = { id: 4, lastModified: new Date('2017-11-25T03:24:00') };
+
+let list = [firstObj, secondObj, thirdObj, fourthObj];
+
+let secondList = [
+      { id: 5, lastModified: new Date('1857-12-17T03:24:00') },
+      thirdObj, firstObj];
+
+const resultList = getLastUpdatedList(list, secondList);
+
+/*resultList => [
+      { id: 5, lastModified: new Date('1857-12-17T03:24:00') },
+      secondObj, thirdObj, firstObj, fourthObj]*/
+```
+
+### concatList(..args:*array*)
 
 > Return an unique Array.
 
